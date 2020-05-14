@@ -1,0 +1,10 @@
+---
+- hosts: linux
+  gather_facts: false
+  tasks:
+    - name: Check Kernel Param
+      kernel_param:
+      register: op
+      become: true
+    - debug:
+        msg: "{{ op }}"
