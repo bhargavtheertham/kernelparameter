@@ -4,7 +4,7 @@
   tasks:
     - name: Check Kernel Param
       kernel_param:
-      register: op
+      register: output
       become: true
     - debug:
-        msg: "{{ op }}"
+        msg: "{{ output }}"

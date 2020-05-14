@@ -5927,3 +5927,26 @@ The offending line appears to be:
 2020-05-14 20:45:48,205 p=18287 u=root n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************************************
 2020-05-14 20:45:48,205 p=18287 u=root n=ansible | cvsadmin11c.mylabserver.com : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
 2020-05-14 20:45:48,205 p=18287 u=root n=ansible | cvsadmin12c.mylabserver.com : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-05-14 21:27:18,970 p=2967 u=root n=ansible | PLAY [linux] *****************************************************************************************************************************************************************************************
+2020-05-14 21:27:19,144 p=2967 u=root n=ansible | TASK [Check Kernel Param] ****************************************************************************************************************************************************************************
+2020-05-14 21:27:21,247 p=2967 u=root n=ansible | fatal: [cvsadmin11c.mylabserver.com]: FAILED! => changed=false 
+  ansible_facts:
+    discovered_interpreter_python: /usr/bin/python
+  changed_flag: false
+  dirty_background_ratio: '10'
+  dirty_expire_centisecs: '3000'
+  dirty_ratio: '30'
+  dirty_writeback_centisecs: '500'
+  msg: '****Kernel Parameter Settings are INCORRECTLY set****'
+2020-05-14 21:27:21,270 p=2967 u=root n=ansible | fatal: [cvsadmin12c.mylabserver.com]: FAILED! => changed=false 
+  ansible_facts:
+    discovered_interpreter_python: /usr/bin/python
+  changed_flag: false
+  dirty_background_ratio: '10'
+  dirty_expire_centisecs: '3000'
+  dirty_ratio: '30'
+  dirty_writeback_centisecs: '500'
+  msg: '****Kernel Parameter Settings are INCORRECTLY set****'
+2020-05-14 21:27:21,272 p=2967 u=root n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************
+2020-05-14 21:27:21,272 p=2967 u=root n=ansible | cvsadmin11c.mylabserver.com : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-05-14 21:27:21,272 p=2967 u=root n=ansible | cvsadmin12c.mylabserver.com : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
